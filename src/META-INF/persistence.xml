@@ -5,6 +5,7 @@
 	<jta-data-source>java:jboss/mobile</jta-data-source>
 		<class>br.fadep.casa.model.generic.AbstractEntityImpl</class>
 		<class>br.fadep.casa.model.Modelo</class>
+		<class>br.fadep.casa.model.Slide</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update"/>
 			<property name="hibernate.show_sql" value="true"/>
