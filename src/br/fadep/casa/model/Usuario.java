@@ -8,7 +8,7 @@ import br.fadep.casa.model.generic.AbstractEntityImpl;
 @Entity
 public class Usuario extends AbstractEntityImpl{
 	
-	@Column
+	@Column(length=200)
 	private String nome;
 	
 	@Column

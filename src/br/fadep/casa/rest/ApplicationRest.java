@@ -16,6 +16,7 @@ public class ApplicationRest extends Application{
 		resources.add(br.fadep.casa.rest.filtros.FilterRequestHeader.class);
 		resources.add(br.fadep.casa.rest.ModeloWs.class);
 		resources.add(br.fadep.casa.rest.SlideWs.class);
+		resources.add(br.fadep.casa.rest.UsuarioWS.class);
 	}
 		
 }

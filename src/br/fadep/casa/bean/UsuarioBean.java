@@ -8,18 +8,13 @@ import javax.persistence.Query;
 import br.fadep.casa.model.Usuario;
 
 @Stateless
-public class CadastroUsuarioBean extends AbstractBeanImpl<Usuario> implements CadastroUsuarioBeanLocal{
+public class UsuarioBean extends AbstractBeanImpl<Usuario> implements UsuarioBeanLocal{
 	
 	@Override
 	public Class<Usuario> getClasses() throws Exception {
 		return Usuario.class;
 	}
 	
-	@TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
-	public Usuario saveUser(Usuario user) throws Exception{
-		salvar(user);
-		return user;
-	}
 	
 	public Usuario getUser(Usuario user) throws Exception{
 		String sql = "select * from usuario where nome = " + user.getNome() + " and senha = " + user.getSenha();
