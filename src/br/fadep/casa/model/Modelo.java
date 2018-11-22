@@ -23,9 +23,18 @@ public class Modelo extends AbstractEntityImpl{
 
 	@Lob
 	private String imagem;
-	
 	@Column
 	private Double posicao;
+	@Column(length = 2000)
+	private String descricao;
+	
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
 	public String getImagem() {
 		return imagem;
